@@ -51,7 +51,6 @@
     git push origin (tag)
         envia tag pro repositorio
             --tags envia todas tags
-
 # Outros
     git gc
         limpa repositorio removendo arquivos duplicatos etc. melhora performance
