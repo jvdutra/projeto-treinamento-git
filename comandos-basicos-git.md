@@ -10,6 +10,8 @@
         envia todos os commit para o repositorio remoto, no github
     git pull
         puxa arquivos do repositorio remoto, usado pra sincronizar com arquivos
+    git clone
+        clona repositorio
     git status
         mostra status de arquivos
 
@@ -26,6 +28,12 @@
         deletar branch
     git merge (nomebranch)
         faz merge da branch atual com a branch indicada
+            pode fazer merge com a main a partir de uma branch criada pra sincronizar arquivos
+    git fetch -a
+        busca todas as branches no repositorio remoto
+            se tiver branch nova ela ja pode ser acessada após
+    git diff
+        pode indicar uma branch ou arquivo para ver as diferenças entre o atual e o que esta salvo no repositorio remoto
     git stash
         guarda todas as alterações não commitadas
     git stash list
@@ -37,3 +45,13 @@
     git stash drop
         remove do stash
     
+# Tags
+    git tag -a (nome) -m "mensagem"
+        cria uma tag, serve para marcar uma versão ou release do projeto
+    git push origin (tag)
+        envia tag pro repositorio
+            --tags envia todas tags
+
+# Outros
+    git gc
+        limpa repositorio removendo arquivos duplicatos etc. melhora performance
