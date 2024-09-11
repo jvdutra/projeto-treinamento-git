@@ -3,6 +3,7 @@
 Git flow é uma ferramenta que facilita os comandos de criação e manipulação de branches, encurtando os comandos.
 
 ## comandos iniciais
+### FEATURE
 
     git flow feature start (nomebranch)
 
@@ -20,6 +21,8 @@ muda para a develop
 
 cria uma branch remota
 
+### RELEASE
+
     git flow release start (nomebranch)
 
 cria uma nova branch baseada na develop
@@ -36,3 +39,22 @@ deleta release nomebranch e muda branch atual pra develop
     git flow release publish (nomebranch)
 
 cria uma branch remota
+
+### HOTFIX
+
+    git flow hotfix start (nomebranch)
+
+cria uma nova branch baseada na develop
+automaticamente a nomeia como hotfix/nomebranch
+faz o checkout para nomebranch
+
+    git flow hotfix finish (nomebranch)
+
+faz merge da branch hotfix pra master
+cria uma tag para simbolizar o hotfix no github
+faz merge da branch hotfix na develop
+deleta hotfix branch e muda para develop
+
+    git flow hotfix publish (nomebranch)
+
+cria branch remota no repositorio
