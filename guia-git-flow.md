@@ -7,54 +7,68 @@ Git flow é uma ferramenta que facilita os comandos de criação e manipulação
 
     git flow feature start (nomebranch)
 
-cria uma nova branch baseada na develop
-automaticamente a nomeia como feature/nomebranch
+cria uma nova branch baseada na **DEVELOP**
+
+automaticamente a nomeia como **feature**/nomebranch
+
 faz o checkout para nomebranch
 
     git flow feature finish (nomebranch)
 
-faz merge da feature/nomebranch na develop
-deleta a feature/nomebranch
+faz merge da **feature**/nomebranch na **DEVELOP**
+
+deleta a **feature**/nomebranch
+
 muda para a develop
 
     git flow feature publish (nomebranch)
 
-cria uma branch remota
+publica branch feature no repositorio remoto
 
 ### RELEASE
 
     git flow release start (nomebranch)
 
-cria uma nova branch baseada na develop
-automaticamente a nomeia como release/nomebranch
+cria uma nova branch baseada na **DEVELOP**
+
+automaticamente a nomeia como **release**/nomebranch
+
 faz o checkout para nomebranch
 
     git flow release finish (nomebranch)
 
-faz merge da branch release pra master
-cria uma tag para simbolizar o release no github
-faz merge de volta pra develop
-deleta release nomebranch e muda branch atual pra develop
+faz merge da branch **release** pra **MASTER**
+
+cria uma tag para simbolizar o **release** no github
+
+faz merge de volta pra **DEVELOP**
+
+deleta **release** branch e muda para **DEVELOP**
 
     git flow release publish (nomebranch)
 
-cria uma branch remota
+publica branch release no repositorio remoto
 
 ### HOTFIX
 
     git flow hotfix start (nomebranch)
 
-cria uma nova branch baseada na develop
-automaticamente a nomeia como hotfix/nomebranch
+cria uma nova branch baseada na **MASTER**
+
+automaticamente a nomeia como **hotfix**/nomebranch
+
 faz o checkout para nomebranch
 
     git flow hotfix finish (nomebranch)
 
-faz merge da branch hotfix pra master
-cria uma tag para simbolizar o hotfix no github
-faz merge da branch hotfix na develop
-deleta hotfix branch e muda para develop
+faz merge da branch **hotfix** pra **MASTER**
+
+cria uma tag para simbolizar o **hotfix** no github
+
+faz merge da branch **hotfix** na **DEVELOP**
+
+deleta **hotfix** branch e muda para **DEVELOP**
 
     git flow hotfix publish (nomebranch)
 
-cria branch remota no repositorio
+publica branch hotfix no repositorio remoto
