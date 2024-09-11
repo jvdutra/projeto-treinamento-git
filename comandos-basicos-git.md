@@ -14,6 +14,10 @@
         clona repositorio
     git status
         mostra status de arquivos
+    git log
+        mostra historico de commits
+    git reset (hash)
+        apaga commits mas não as suas alteracoes, recebe um hash de um commit para voltar o estado do sistema até este commit
 
 # Branches
     git branch 
